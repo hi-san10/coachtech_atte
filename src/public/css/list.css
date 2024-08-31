@@ -1,0 +1,46 @@
+.link_nav a {
+    color: black;
+    font-weight: bold;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.list {
+    height: 680px;
+    background-color: #f4f4f4;
+}
+
+.list_table {
+    height: 600px;
+}
+
+.name a {
+    color: black;
+    text-decoration: none;
+}
+
+tr {
+    height: 80px;
+}
+
+tr:not(:first-child) {
+    border-top: solid 1px black;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+}
+
+th, td {
+    padding-left: 80px;
+}
+
+th {
+    font-size: 20px;
+}
+
+td {
+    font-size: 18px;
+}
+

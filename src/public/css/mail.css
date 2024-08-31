@@ -1,0 +1,17 @@
+.verify {
+    height: 680px;
+}
+
+.verify__message {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+}
+
+.verify__link {
+    display: flex;
+    justify-content: center;
+}

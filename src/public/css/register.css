@@ -1,0 +1,53 @@
+.register {
+    background-color: #f4f4f4;
+    height: 680px;
+}
+
+.register-text p {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 80px;
+}
+
+.register__form--item input,button {
+    display: block;
+    margin: auto;
+    width: 30%;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: solid 0.5px black;
+    color: gray;
+}
+
+button {
+    background-color: blue;
+    color: white;
+}
+
+.register__have-account p {
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+}
+
+.login-button a {
+    text-decoration: none;
+    color: blue;
+}
+
+.alert__message {
+    width: 30%;
+    margin-left: 505px;
+    margin-bottom: 35px;
+}
+
+.alert__message p {
+    background-color: red;
+    border-radius: 3px;
+}

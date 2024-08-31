@@ -1,0 +1,54 @@
+.header__nav {
+    display: flex;
+}
+
+li:not(:last-child) {
+    margin-right: 25px;
+}
+
+.header__nav-item {
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+    border: none;
+    background-color: white;
+}
+
+.stamp {
+    background-color: #f4f4f4;
+    height: 680px;
+}
+
+.stamp__message {
+    display: flex;
+    justify-content: center;
+}
+
+.stamp__message-content {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+.stamp__container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 200px 200px;
+    gap: 25px;
+}
+
+.stamp__container-item {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.stamp__container-item button {
+    border: none;
+    width: 100%;
+    font-size: 25px;
+    background-color: white;
+}

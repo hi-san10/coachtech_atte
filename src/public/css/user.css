@@ -1,0 +1,64 @@
+.link_nav a {
+    color: black;
+    font-weight: bold;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.user {
+    height: 680px;
+    background-color: #f4f4f4;
+}
+
+.user_name {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+.user_name p {
+    font-size: 25px;
+    margin: auto;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.date_link:nth-of-type(2) {
+    margin: auto 50px;
+    color: black;
+}
+
+.date_link:first-of-type, .date_link:last-of-type{
+    margin: auto 0;
+    color: black;
+}
+
+.user_table {
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+table {
+    width: 85%;
+}
+
+tr {
+    height: 80px;
+}
+
+td {
+    border-top: solid black 0.5px;
+}
+
+.head, td {
+    text-align: center;
+}

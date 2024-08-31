@@ -1,0 +1,15 @@
+.verify-email {
+    height: 680px;
+    background-color: #f4f4f4;
+}
+
+.verify-email__content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verify-email__content--text {
+    color: blue;
+}
