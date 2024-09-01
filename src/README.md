@@ -29,7 +29,7 @@
 
 ### Dockerビルド
 
-1. git clone git@github.com:hi-san10/coachtechtest.git
+1. git clone git@github.com:hi-san10/coachtech_atte.git
 
 2. docker-compose up -d --build
 
