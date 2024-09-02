@@ -42,7 +42,6 @@
     <div class="login-button">
         <a href="/login">ログイン</a>
     </div>
-    <img src="../../../er.drawio.png" alt="">
 </div>
 
 @endsection

@@ -15,17 +15,20 @@ class WorktimeController extends Controller
 {
     public function index(Request $request)
     {
+        $carbon = CarbonImmutable::today();
         if(Auth::check())
         {
-        $work = Worktime::where('user_id', Auth::id())->where('end_time', null)->exists();
+        $start = Worktime::where('user_id', Auth::id())->whereDate('start_time', $carbon)->exists();
 
-        $break_in = Worktime::where('user_id', Auth::id())->whereDate('start_time', CarbonImmutable::today())->exists();
+        $end = Worktime::whereDate('start_time', $carbon)->where('user_id', Auth::id())->where('end_time', null)->exists();
+
+        $break_in = Worktime::where('user_id', Auth::id())->whereDate('start_time', $carbon)->where('end_time', null)->exists();
 
         $during_break = Breaktime::where('user_id', Auth::id())->where('end_time', null)->exists();
 
-        $break_out = Breaktime::where('user_id',Auth::id())->whereDate('start_time',CarbonImmutable::today())->exists();
+        $break_out = Breaktime::where('user_id',Auth::id())->whereDate('start_time',$carbon)->exists();
 
-        return view('stamp', compact('work', 'break_in', 'during_break', 'break_out'));
+        return view('stamp', compact('start', 'end', 'break_in', 'during_break', 'break_out'));
         }else{
             return view('login');
         }

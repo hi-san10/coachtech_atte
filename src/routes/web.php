@@ -28,7 +28,7 @@ Route::group(['middleware'=>'auth'],function()
 
     Route::patch('/break_out',[StampController::class,'break_out']);
 
-    Route::get('user/list',[WorktimeController::class,'list']);
+    Route::get('user/list',[WorktimeController::class,'list'])->name('list');
 
 });
 
@@ -49,8 +49,3 @@ Route::get('/attendance/{date?}',[WorktimeController::class,'attendance'])->name
 Route::get('/user/{id?}/{date?}', [WorktimeController::class, 'user'])->name('user');
 
 Route::get('/verify/{name}/{email}', [LoginController::class, 'verify'])->name('verify');
-
-Route::get('/w', function()
-{
-    return view('w');
-});

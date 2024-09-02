@@ -29,7 +29,7 @@
 
 ### Dockerビルド
 
-1. git clone git@github.com:hi-san10/coachtechtest.git
+1. git clone git@github.com:hi-san10/coachtech_atte.git
 
 2. docker-compose up -d --build
 
@@ -52,6 +52,10 @@
     ・ダミーデータのユーザーのパスワードは全て「1111」になっています。
 
     ・認証メールの機能はそれぞれでenvファイルを編集して使用してください
+
+    ・ユーザー一覧はログイン後、ログインページから移動できます
+
+    ・ユーザーごとの勤怠一覧はユーザー一覧ページから名前をクリックすると確認できます
 
 ## 使用技術
 

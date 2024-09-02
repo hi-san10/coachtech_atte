@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-// use App\Notifications\CustomVerifyMail;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -32,7 +31,7 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function break()
     {
-        return $this->hasMany(breaktime::class);
+        return $this->hasMany(Breaktime::class);
     }
 
     // public function sendEmailVerificationNotification()

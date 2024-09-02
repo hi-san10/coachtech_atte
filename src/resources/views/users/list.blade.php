@@ -10,7 +10,7 @@
 
 @section('link')
 <div class="link_nav">
-    <a href="/login">ホーム</a>
+    <a href="/">ホーム</a>
     <a href="/attendance">日付一覧</a>
 </div>
 @endsection

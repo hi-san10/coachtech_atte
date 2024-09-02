@@ -11,7 +11,7 @@
 @section('link')
 <div class="nav_link">
     <div class="nav_link__content">
-        <a class="link" href="/login">ホーム</a>
+        <a class="link" href="/">ホーム</a>
         <a href="/attendance" class="link">日付一覧</a>
         <form action="/logout" method="post">
             @csrf

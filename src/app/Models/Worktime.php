@@ -24,7 +24,7 @@ class Worktime extends Model
 
     public function breaks()
     {
-        return $this->hasMany(breaktime::class);
+        return $this->hasMany(Breaktime::class);
     }
 
     public function user()

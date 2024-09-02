@@ -28,8 +28,8 @@
         <form action="/start" method="post">
             @csrf
             <div class="stamp__container-item">
-                @if($work)
-                <button type="submit" disabled>勤務開始</button>
+                @if($start)
+                <button disabled>勤務開始</button>
                 @else
                 <button>勤務開始</button>
                 @endif
@@ -39,9 +39,7 @@
             @method('patch')
             @csrf
             <div class="stamp__container-item">
-                @if($work)
-                <button type="submit">勤務終了</button>
-                @elseif(!Auth::check())
+                @if($end)
                 <button>勤務終了</button>
                 @else
                 <button disabled>勤務終了</button>

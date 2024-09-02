@@ -11,9 +11,9 @@ href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
 
 @section('link')
 <div class="link_nav">
-    <a href="/login">ホーム</a>
+    <a href="/">ホーム</a>
     <a href="/attendance">日付一覧</a>
-    <a href="/list">ユーザー一覧</a>
+    <a href="{{ route('list') }}">ユーザー一覧</a>
 </div>
 @endsection
 
@@ -40,9 +40,27 @@ href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
             <tr>
                 <td>{{ $work->start_time->format('m-d') }}</td>
                 <td>{{ $work->start_time->format('H:i:s') }}</td>
-                <td>{{ $work->break_total_time }}</td>
-                <td>{{ $work->end_time->format('H:i:s') }}</td>
-                <td>{{ $work->actual_working_time }}</td>
+                <td>
+                    @if(is_null($work->break_total_time))
+                    -
+                    @else
+                    {{ $work->break_total_time }}
+                    @endif
+                </td>
+                <td>
+                    @if(is_null( $work->end_time ))
+                    -
+                    @else
+                    {{ $work->end_time->format('H:i:s') }}
+                    @endif
+                </td>
+                <td>
+                    @if(is_null($work->actual_working_time))
+                    -
+                    @else
+                    {{ $work->actual_working_time }}
+                    @endif
+                </td>
             </tr>
             @endforeach
         </table>
