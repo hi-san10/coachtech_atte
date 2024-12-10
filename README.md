@@ -74,3 +74,4 @@
 ・アプリケーション:[http//localhost/](http//localhost/)
 
 ・phpMyAdmin:[http//localhost:8080](http/localhost:8080)
+![103985DE-3AFC-41D1-B28B-B189BDC8938A](https://github.com/user-attachments/assets/12c952ff-deb2-4312-8e03-f97c9e46020c)
