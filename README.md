@@ -43,6 +43,10 @@
 
 3. env.example ファイルから .env を作成し、環境変数を変更
 
+    ・開発環境ではMailtrapサービスを使ってメール機能を開発しています
+
+    ・Mailtrap url https://mailtrap.io
+
 4. php artisan key:generate
 
 5. php artisan migrate
